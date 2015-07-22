@@ -1,0 +1,2 @@
+
+[severe 2015/07/14 14:20:36.901 EDT server1 <Quorum Lost Notification> tid=0x44] Possible loss of quorum due to the loss of 2 cache processes: [172.16.139.149(VMServer1:3674)<v19>:56704, 172.16.139.149(VMServer1:3183)<v8>:34984]

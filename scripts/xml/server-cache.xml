@@ -1,0 +1,66 @@
+<?xml version="1.0"?>
+<!DOCTYPE cache PUBLIC
+    "-//GemStone Systems, Inc.//GemFire Declarative Caching 7.0//EN"
+    "http://www.gemstone.com/dtd/cache7_0.dtd">
+
+<!--
+  | cache.xml
+  |
+  | Initializes a region with sample Customer data for querying. 
+-->
+<cache>
+		<disk-store name="persistentStore" compaction-threshold="50"
+		auto-compact="true" allow-force-compaction="false"
+		max-oplog-size="1024" queue-size="0" time-interval="100" 
+		write-buffer-size="32768">
+		<disk-dirs>
+		  <disk-dir>persistence/six</disk-dir>
+		  <disk-dir>persistence/seven</disk-dir>
+		
+		</disk-dirs>
+		  
+		
+		</disk-store>
+		
+		
+		
+		
+	 	<pdx read-serialized="true">
+			<pdx-serializer>
+				<class-name>com.gemstone.gemfire.pdx.ReflectionBasedAutoSerializer</class-name>
+			</pdx-serializer>
+		</pdx>
+      
+        <region name="Customer">
+    		<region-attributes refid="PARTITION"/>
+    		<index name="PrimIndex">
+    			<primary-key field="intValue"/>
+    		</index>
+    	</region>
+          
+        <region name="BookMaster">
+          <region-attributes refid="REPLICATE_PERSISTENT"
+           disk-store-name="persistentStore" 
+          disk-synchronous="false" />
+            
+    	</region>
+    	    	
+    	<region name="BookOrder">
+      		<region-attributes refid="REPLICATE_PERSISTENT"
+      		 disk-store-name="persistentStore" 
+      		disk-synchronous="false"/>
+    	</region>
+    	
+        <region name="InventoryItem">
+      		<region-attributes refid="PARTITION"/>
+    	</region>
+        <!-- <function-service>
+       	   <function>
+      		 <class-name>com.gopivotal.bookshop.buslogic.GenericSumFunction</class-name>
+      	 </function>
+       </function-service>     	
+         -->
+       <backup>/Users/mross/Desktop/springsource/GemFire-Developer-8.0.a.RELEASE/server-bootstrap/README.md</backup>  
+         
+        	
+</cache>

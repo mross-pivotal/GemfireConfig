@@ -1,0 +1,20 @@
+
+[severe 2015/07/13 16:43:23.325 EDT server1 <Quorum Lost Notification> tid=0x45] Possible loss of quorum due to the loss of 2 cache processes: [172.16.139.149(VMServer1:3674)<v19>:56704, 172.16.139.149(VMServer1:3183)<v8>:34984]
+
+[severe 2015/07/13 16:44:16.128 EDT server1 <Quorum Lost Notification> tid=0x87] Possible loss of quorum due to the loss of 2 cache processes: [172.16.139.149(VMServer1:3674)<v19>:56704, 172.16.139.149(VMServer1:3183)<v8>:34984]
+
+[warning 2015/07/13 21:12:57.367 EDT server1 <ClientHealthMonitor Thread> tid=0x82] Monitoring client with member id identity(pivotal-guest-6-59(22757:loner):61864:be174689(version:GFE 8.0),connection=1. It had been 10,802,046 ms since the latest heartbeat. Max interval is 60,000. Terminated client.
+
+[warning 2015/07/14 09:24:36.105 EDT server1 <Thread-67 StatSampler> tid=0x73] Statistics sampling thread detected a wakeup delay of 103,702 ms, indicating a possible resource issue. Check the GC, memory, and CPU statistics.
+
+[warning 2015/07/14 09:24:36.252 EDT server1 <BridgeServer-LoadPollingThread> tid=0x81] Attempting TCP/IP reconnect to  pivotal-guest-6-59(locator:21293:locator)<v0>:13404
+
+[warning 2015/07/14 09:24:36.317 EDT server1 <Management Task> tid=0x7a] Attempting TCP/IP reconnect to  pivotal-guest-6-59(locator:21293:locator)<v0>:13404
+
+[warning 2015/07/14 09:24:38.275 EDT server1 <BridgeServer-LoadPollingThread> tid=0x81] Connection: Attempting reconnect to peer  pivotal-guest-6-59(locator:21293:locator)<v0>:13404
+
+[warning 2015/07/14 09:24:49.779 EDT server1 <UDP ucast receiver> tid=0x1f] New cache time offset calculated is off more than 12,139 ms from earlier offset.
+
+[warning 2015/07/14 11:04:12.427 EDT server1 <ServerConnection on port 61100 Thread 5> tid=0x9c] 15 seconds have elapsed while waiting for replies: <DistributedCacheOperation$CacheOperationReplyProcessor 106598 waiting for 1 replies from [pivotal-guest-6-59(server2:22299)<v34>:49329]> on pivotal-guest-6-59(server1:22286)<v32>:64665 whose current membership list is: [[pivotal-guest-6-59(locator:21293:locator)<v0>:13404, pivotal-guest-6-59(server2:22299)<v34>:49329, pivotal-guest-6-59(server1:22286)<v32>:64665]]
+
+[warning 2015/07/14 11:04:13.141 EDT server1 <ClientHealthMonitor Thread> tid=0x82] Server connection from [identity(pivotal-guest-6-59(22757:loner):65319:a83e168d(version:GFE 8.0),connection=1; port=65322] is being terminated because its client timeout of 10,000 has expired.

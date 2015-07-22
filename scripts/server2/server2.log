@@ -1,0 +1,41 @@
+
+[error 2015/07/13 16:44:35.153 EDT server2 <main> tid=0x1] Failed to create index PrimIndex on region /Customer with exception: com.gemstone.gemfire.cache.query.IndexNameConflictException: Index named ' PrimIndex ' already exists.
+
+[warning 2015/07/13 16:55:20.891 EDT server2 <Function Execution Processor1> tid=0x86] Unable to compare object of type ' com.gemstone.gemfire.pdx.internal.PdxString ' with object of type ' java.lang.Integer '
+com.gemstone.gemfire.cache.query.TypeMismatchException: Unable to compare object of type ' com.gemstone.gemfire.pdx.internal.PdxString ' with object of type ' java.lang.Integer '
+	at com.gemstone.gemfire.cache.query.internal.types.TypeUtils.compare(TypeUtils.java:207)
+	at com.gemstone.gemfire.cache.query.internal.CompiledComparison.evaluate(CompiledComparison.java:126)
+	at com.gemstone.gemfire.cache.query.internal.CompiledSelect.doNestedIterations(CompiledSelect.java:632)
+	at com.gemstone.gemfire.cache.query.internal.CompiledSelect.doNestedIterations(CompiledSelect.java:704)
+	at com.gemstone.gemfire.cache.query.internal.CompiledSelect.doIterationEvaluate(CompiledSelect.java:560)
+	at com.gemstone.gemfire.cache.query.internal.CompiledSelect.evaluate(CompiledSelect.java:396)
+	at com.gemstone.gemfire.cache.query.internal.DefaultQuery.executeUsingContext(DefaultQuery.java:444)
+	at com.gemstone.gemfire.cache.query.internal.DefaultQuery.execute(DefaultQuery.java:280)
+	at com.gemstone.gemfire.cache.query.internal.DefaultQuery.execute(DefaultQuery.java:218)
+	at com.gemstone.gemfire.management.internal.cli.functions.DataCommandFunction.select(DataCommandFunction.java:235)
+	at com.gemstone.gemfire.management.internal.cli.functions.DataCommandFunction.select(DataCommandFunction.java:194)
+	at com.gemstone.gemfire.management.internal.cli.functions.DataCommandFunction.execute(DataCommandFunction.java:139)
+	at com.gemstone.gemfire.internal.cache.MemberFunctionStreamingMessage.process(MemberFunctionStreamingMessage.java:185)
+	at com.gemstone.gemfire.distributed.internal.DistributionMessage.scheduleAction(DistributionMessage.java:366)
+	at com.gemstone.gemfire.distributed.internal.DistributionMessage$1.run(DistributionMessage.java:428)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at com.gemstone.gemfire.distributed.internal.DistributionManager.runUntilShutdown(DistributionManager.java:692)
+	at com.gemstone.gemfire.distributed.internal.DistributionManager$9$1.run(DistributionManager.java:1149)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: java.lang.ClassCastException: java.lang.Integer cannot be cast to com.gemstone.gemfire.pdx.internal.PdxString
+	at com.gemstone.gemfire.pdx.internal.PdxString.compareTo(PdxString.java:27)
+	at com.gemstone.gemfire.cache.query.internal.types.TypeUtils.compare(TypeUtils.java:173)
+	... 19 more
+
+[warning 2015/07/14 09:24:36.081 EDT server2 <BridgeServer-LoadPollingThread> tid=0x81] Attempting TCP/IP reconnect to  pivotal-guest-6-59(locator:21293:locator)<v0>:13404
+
+[warning 2015/07/14 09:24:35.959 EDT server2 <Thread-66 StatSampler> tid=0x72] Statistics sampling thread detected a wakeup delay of 99,145 ms, indicating a possible resource issue. Check the GC, memory, and CPU statistics.
+
+[warning 2015/07/14 09:24:36.154 EDT server2 <Management Task> tid=0x7a] Attempting TCP/IP reconnect to  pivotal-guest-6-59(locator:21293:locator)<v0>:13404
+
+[warning 2015/07/13 21:13:30.347 EDT server2 <TimeScheduler.Thread> tid=0x28] unable to check state of unresponsive member pivotal-guest-6-59(server1:22286)<v32>:64665
+
+[warning 2015/07/14 09:24:38.455 EDT server2 <BridgeServer-LoadPollingThread> tid=0x81] Connection: Attempting reconnect to peer  pivotal-guest-6-59(locator:21293:locator)<v0>:13404
+
+[warning 2015/07/14 09:24:49.773 EDT server2 <UDP ucast receiver> tid=0x1f] New cache time offset calculated is off more than 12,460 ms from earlier offset.

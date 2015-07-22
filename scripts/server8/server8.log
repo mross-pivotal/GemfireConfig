@@ -1,0 +1,734 @@
+
+[info 2015/07/22 11:39:58.975 PDT server8 <main> tid=0x1] Startup Configuration:
+   ### GemFire Properties defined with system property ###
+  cache-xml-file=/Users/mross/Desktop/springsource/GemFire-Developer-8.0.a.RELEASE/server-bootstrap/scripts/xml/server-cache.xml
+  locators=john[41111],mallika[41111]
+  use-cluster-configuration=true
+  ### GemFire Properties defined with api ###
+  name=server8
+  ### GemFire Properties defined with file:/Users/mross/Desktop/springsource/GemFire-Developer-8.0.a.RELEASE/server-bootstrap/scripts/gemfire.properties ###
+  archive-disk-space-limit=1000
+  archive-file-size-limit=100
+  enable-network-partition-detection=true
+  enable-time-statistics=true
+  log-disk-space-limit=100
+  log-file-size-limit=100
+  log-level=config
+  mcast-port=0
+  redundancy-zone=myzone1
+  statistic-archive-file="stats.gfs.gz"
+  statistic-sample-rate=1000
+  statistic-sampling-enabled=true
+  ### GemFire Properties defined with launcher ###
+  log-file=server8.log
+  ### GemFire Properties using default values ###
+  ack-severe-alert-threshold=0
+  ack-wait-threshold=15
+  async-distribution-timeout=0
+  async-max-queue-size=8
+  async-queue-timeout=60000
+  bind-address=
+  cluster-configuration-dir=/Users/mross/Desktop/springsource/GemFire-Developer-8.0.a.RELEASE/server-bootstrap/scripts/server8
+  cluster-ssl-ciphers=any
+  cluster-ssl-enabled=false
+  cluster-ssl-keystore=
+  cluster-ssl-keystore-password=
+  cluster-ssl-keystore-type=
+  cluster-ssl-protocols=any
+  cluster-ssl-require-authentication=true
+  cluster-ssl-truststore=
+  cluster-ssl-truststore-password=
+  conflate-events=server
+  conserve-sockets=true
+  delta-propagation=true
+  deploy-working-dir=.
+  disable-auto-reconnect=false
+  disable-tcp=false
+  distributed-system-id=-1
+  durable-client-id=
+  durable-client-timeout=300
+  enable-cluster-configuration=true
+  enforce-unique-host=false
+  gateway-ssl-ciphers=any
+  gateway-ssl-enabled=false
+  gateway-ssl-keystore=
+  gateway-ssl-keystore-password=
+  gateway-ssl-keystore-type=
+  gateway-ssl-protocols=any
+  gateway-ssl-require-authentication=true
+  gateway-ssl-truststore=
+  gateway-ssl-truststore-password=
+  groups=
+  http-service-bind-address=
+  http-service-port=7070
+  http-service-ssl-ciphers=any
+  http-service-ssl-enabled=false
+  http-service-ssl-keystore=
+  http-service-ssl-keystore-password=
+  http-service-ssl-keystore-type=
+  http-service-ssl-protocols=any
+  http-service-ssl-require-authentication=false
+  http-service-ssl-truststore=
+  http-service-ssl-truststore-password=
+  jmx-manager=false
+  jmx-manager-access-file=
+  jmx-manager-bind-address=
+  jmx-manager-hostname-for-clients=
+  jmx-manager-http-port=7070
+  jmx-manager-password-file=
+  jmx-manager-port=1099
+  jmx-manager-ssl=false
+  jmx-manager-ssl-ciphers=any
+  jmx-manager-ssl-enabled=false
+  jmx-manager-ssl-keystore=
+  jmx-manager-ssl-keystore-password=
+  jmx-manager-ssl-keystore-type=
+  jmx-manager-ssl-protocols=any
+  jmx-manager-ssl-require-authentication=true
+  jmx-manager-ssl-truststore=
+  jmx-manager-ssl-truststore-password=
+  jmx-manager-start=false
+  jmx-manager-update-rate=2000
+  license-application-cache=
+  license-data-management=
+  license-server-timeout=10000
+  license-working-dir=
+  load-cluster-configuration-from-dir=false
+  locator-wait-time=0
+  max-num-reconnect-tries=3
+  max-wait-time-reconnect=60000
+  mcast-address=239.192.81.1
+  mcast-flow-control=1048576, 0.25, 5000
+  mcast-recv-buffer-size=1048576
+  mcast-send-buffer-size=65535
+  mcast-ttl=32
+  member-timeout=5000
+  membership-port-range=1024-65535
+  memcached-bind-address=
+  memcached-port=0
+  memcached-protocol=ASCII
+  remote-locators=
+  remove-unresponsive-client=false
+  roles=
+  security-=
+  security-client-accessor=
+  security-client-accessor-pp=
+  security-client-auth-init=
+  security-client-authenticator=
+  security-client-dhalgo=
+  security-log-file=
+  security-log-level=config
+  security-peer-auth-init=
+  security-peer-authenticator=
+  security-peer-verifymember-timeout=1000
+  server-bind-address=
+  server-ssl-ciphers=any
+  server-ssl-enabled=false
+  server-ssl-keystore=
+  server-ssl-keystore-password=
+  server-ssl-keystore-type=
+  server-ssl-protocols=any
+  server-ssl-require-authentication=true
+  server-ssl-truststore=
+  server-ssl-truststore-password=
+  socket-buffer-size=32768
+  socket-lease-time=60000
+  ssl-ciphers=any
+  ssl-enabled=false
+  ssl-protocols=any
+  ssl-require-authentication=true
+  start-dev-rest-api=false
+  start-locator=
+  tcp-port=0
+  udp-fragment-size=60000
+  udp-recv-buffer-size=1048576
+  udp-send-buffer-size=65535
+  user-command-packages=
+  writable-working-dir=
+  
+
+[info 2015/07/22 11:39:58.994 PDT server8 <main> tid=0x1] 
+  ---------------------------------------------------------------------------
+  
+    Copyright (C) 1997-2015 Pivotal Software, Inc. All rights reserved. This
+    product is protected by U.S. and international copyright and intellectual
+    property laws. Pivotal products are covered by one or more patents listed
+    at http://www.pivotal.io/patents.  Pivotal is a registered trademark
+    of trademark of Pivotal Software, Inc. in the United States and/or other
+    jurisdictions.  All other marks and names mentioned herein may be
+    trademarks of their respective companies.
+  
+  ---------------------------------------------------------------------------
+  Java version:   8.1.0 build 50625 01/16/2015 16:21:01 PST javac 1.7.0_72
+  Native version: native code unavailable
+  Source revision: 50625
+  Source repository: gemfire/branches/cedar_dev_Oct12
+  Running on: matt/192.168.1.20, 8 cpu(s), x86_64 Mac OS X 10.10.3
+  Process ID: 37752
+  User: mross
+  Current dir: /Users/mross/Desktop/springsource/GemFire-Developer-8.0.a.RELEASE/server-bootstrap/scripts/server8
+  Home dir: /Users/mross
+  Command Line Parameters:
+    -DgemfirePropertyFile=/Users/mross/Desktop/springsource/GemFire-Developer-8.0.a.RELEASE/server-bootstrap/scripts/gemfire.properties
+    -Dgemfire.cache-xml-file=/Users/mross/Desktop/springsource/GemFire-Developer-8.0.a.RELEASE/server-bootstrap/scripts/xml/server-cache.xml
+    -Dgemfire.locators=john[41111],mallika[41111]
+    -Dgemfire.use-cluster-configuration=true
+    -XX:+UseParNewGC
+    -Xms250m
+    -XX:OnOutOfMemoryError=kill -KILL %p
+    -Xms30m
+    -Xmx30m
+    -XX:+UseConcMarkSweepGC
+    -XX:CMSInitiatingOccupancyFraction=60
+    -Dgemfire.launcher.registerSignalHandlers=true
+    -Djava.awt.headless=true
+    -Dsun.rmi.dgc.server.gcInterval=9223372036854775806
+  Class Path:
+    /usr/local/Cellar/gemfire/8.1.0/libexec/lib/gemfire.jar
+    /Users/mross/Desktop/springsource/GemFire-Developer-8.0.a.RELEASE/server-bootstrap/target/classes
+    /usr/local/Cellar/gemfire/8.1.0/libexec/lib/server-dependencies.jar
+  Library Path:
+    /Users/mross/Library/Java/Extensions
+    /Library/Java/Extensions
+    /Network/Library/Java/Extensions
+    /System/Library/Java/Extensions
+    /usr/lib/java
+    .
+  System Properties:
+      awt.toolkit = sun.lwawt.macosx.LWCToolkit
+      file.encoding = UTF-8
+      file.encoding.pkg = sun.io
+      file.separator = /
+      ftp.nonProxyHosts = local|*.local|169.254/16|*.169.254/16
+      gemfire.cache-xml-file = /Users/mross/Desktop/springsource/GemFire-Developer-8.0.a.RELEASE/server-bootstrap/scripts/xml/server-cache.xml
+      gemfire.launcher.registerSignalHandlers = true
+      gemfire.locators = john[41111],mallika[41111]
+      gemfire.use-cluster-configuration = true
+      gemfirePropertyFile = /Users/mross/Desktop/springsource/GemFire-Developer-8.0.a.RELEASE/server-bootstrap/scripts/gemfire.properties
+      gopherProxySet = false
+      http.nonProxyHosts = local|*.local|169.254/16|*.169.254/16
+      java.awt.graphicsenv = sun.awt.CGraphicsEnvironment
+      java.awt.headless = true
+      java.awt.printerjob = sun.lwawt.macosx.CPrinterJob
+      java.class.version = 52.0
+      java.endorsed.dirs = /Library/Java/JavaVirtualMachines/jdk1.8.0_45.jdk/Contents/Home/jre/lib/endorsed
+      java.ext.dirs = /Users/mross/Library/Java/Extensions:/Library/Java/JavaVirtualMachines/jdk1.8.0_45.jdk/Contents/Home/jre/lib/ext:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java
+      java.home = /Library/Java/JavaVirtualMachines/jdk1.8.0_45.jdk/Contents/Home/jre
+      java.io.tmpdir = /var/folders/2q/krqwcbhj2d58csmthyq_n1nw0000gp/T/
+      java.rmi.server.randomIDs = true
+      java.runtime.name = Java(TM) SE Runtime Environment
+      java.runtime.version = 1.8.0_45-b14
+      java.specification.name = Java Platform API Specification
+      java.specification.vendor = Oracle Corporation
+      java.specification.version = 1.8
+      java.vendor = Oracle Corporation
+      java.vendor.url = http://java.oracle.com/
+      java.vendor.url.bug = http://bugreport.sun.com/bugreport/
+      java.version = 1.8.0_45
+      java.vm.info = mixed mode
+      java.vm.name = Java HotSpot(TM) 64-Bit Server VM
+      java.vm.specification.name = Java Virtual Machine Specification
+      java.vm.specification.vendor = Oracle Corporation
+      java.vm.specification.version = 1.8
+      java.vm.vendor = Oracle Corporation
+      java.vm.version = 25.45-b02
+      jna.platform.library.path = /usr/lib:/usr/lib
+      jnidispatch.path = /var/folders/2q/krqwcbhj2d58csmthyq_n1nw0000gp/T/jna-104170314/jna1120387575535521365.tmp
+      line.separator = 
+  
+      log4j.configurationFile = jar:file:/usr/local/Cellar/gemfire/8.1.0/libexec/lib/gemfire.jar!/com/gemstone/gemfire/internal/logging/log4j/log4j2-default.xml
+      os.version = 10.10.3
+      p2p.useSSL = false
+      path.separator = :
+      socksNonProxyHosts = local|*.local|169.254/16|*.169.254/16
+      sun.arch.data.model = 64
+      sun.boot.class.path = /Library/Java/JavaVirtualMachines/jdk1.8.0_45.jdk/Contents/Home/jre/lib/resources.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_45.jdk/Contents/Home/jre/lib/rt.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_45.jdk/Contents/Home/jre/lib/sunrsasign.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_45.jdk/Contents/Home/jre/lib/jsse.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_45.jdk/Contents/Home/jre/lib/jce.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_45.jdk/Contents/Home/jre/lib/charsets.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_45.jdk/Contents/Home/jre/lib/jfr.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_45.jdk/Contents/Home/jre/classes
+      sun.boot.library.path = /Library/Java/JavaVirtualMachines/jdk1.8.0_45.jdk/Contents/Home/jre/lib
+      sun.cpu.endian = little
+      sun.cpu.isalist = 
+      sun.io.unicode.encoding = UnicodeBig
+      sun.java.command = com.gemstone.gemfire.distributed.ServerLauncher start server8 --redirect-output --server-port=0
+      sun.java.launcher = SUN_STANDARD
+      sun.jnu.encoding = UTF-8
+      sun.management.compiler = HotSpot 64-Bit Tiered Compilers
+      sun.nio.ch.bugLevel = 
+      sun.os.patch.level = unknown
+      sun.rmi.dgc.server.gcInterval = 9223372036854775806
+      user.country = US
+      user.language = en
+      user.timezone = America/Los_Angeles
+  ---------------------------------------------------------------------------
+  
+
+[info 2015/07/22 11:39:58.997 PDT server8 <main> tid=0x1] Startup Configuration:
+   ### GemFire Properties defined with system property ###
+  cache-xml-file=/Users/mross/Desktop/springsource/GemFire-Developer-8.0.a.RELEASE/server-bootstrap/scripts/xml/server-cache.xml
+  locators=john[41111],mallika[41111]
+  use-cluster-configuration=true
+  ### GemFire Properties defined with api ###
+  name=server8
+  ### GemFire Properties defined with file:/Users/mross/Desktop/springsource/GemFire-Developer-8.0.a.RELEASE/server-bootstrap/scripts/gemfire.properties ###
+  archive-disk-space-limit=1000
+  archive-file-size-limit=100
+  enable-network-partition-detection=true
+  enable-time-statistics=true
+  log-disk-space-limit=100
+  log-file-size-limit=100
+  log-level=config
+  mcast-port=0
+  redundancy-zone=myzone1
+  statistic-archive-file="stats.gfs.gz"
+  statistic-sample-rate=1000
+  statistic-sampling-enabled=true
+  ### GemFire Properties defined with launcher ###
+  log-file=server8.log
+  ### GemFire Properties using default values ###
+  ack-severe-alert-threshold=0
+  ack-wait-threshold=15
+  async-distribution-timeout=0
+  async-max-queue-size=8
+  async-queue-timeout=60000
+  bind-address=
+  cluster-configuration-dir=/Users/mross/Desktop/springsource/GemFire-Developer-8.0.a.RELEASE/server-bootstrap/scripts/server8
+  cluster-ssl-ciphers=any
+  cluster-ssl-enabled=false
+  cluster-ssl-keystore=
+  cluster-ssl-keystore-password=
+  cluster-ssl-keystore-type=
+  cluster-ssl-protocols=any
+  cluster-ssl-require-authentication=true
+  cluster-ssl-truststore=
+  cluster-ssl-truststore-password=
+  conflate-events=server
+  conserve-sockets=true
+  delta-propagation=true
+  deploy-working-dir=.
+  disable-auto-reconnect=false
+  disable-tcp=false
+  distributed-system-id=-1
+  durable-client-id=
+  durable-client-timeout=300
+  enable-cluster-configuration=true
+  enforce-unique-host=false
+  gateway-ssl-ciphers=any
+  gateway-ssl-enabled=false
+  gateway-ssl-keystore=
+  gateway-ssl-keystore-password=
+  gateway-ssl-keystore-type=
+  gateway-ssl-protocols=any
+  gateway-ssl-require-authentication=true
+  gateway-ssl-truststore=
+  gateway-ssl-truststore-password=
+  groups=
+  http-service-bind-address=
+  http-service-port=7070
+  http-service-ssl-ciphers=any
+  http-service-ssl-enabled=false
+  http-service-ssl-keystore=
+  http-service-ssl-keystore-password=
+  http-service-ssl-keystore-type=
+  http-service-ssl-protocols=any
+  http-service-ssl-require-authentication=false
+  http-service-ssl-truststore=
+  http-service-ssl-truststore-password=
+  jmx-manager=false
+  jmx-manager-access-file=
+  jmx-manager-bind-address=
+  jmx-manager-hostname-for-clients=
+  jmx-manager-http-port=7070
+  jmx-manager-password-file=
+  jmx-manager-port=1099
+  jmx-manager-ssl=false
+  jmx-manager-ssl-ciphers=any
+  jmx-manager-ssl-enabled=false
+  jmx-manager-ssl-keystore=
+  jmx-manager-ssl-keystore-password=
+  jmx-manager-ssl-keystore-type=
+  jmx-manager-ssl-protocols=any
+  jmx-manager-ssl-require-authentication=true
+  jmx-manager-ssl-truststore=
+  jmx-manager-ssl-truststore-password=
+  jmx-manager-start=false
+  jmx-manager-update-rate=2000
+  license-application-cache=
+  license-data-management=
+  license-server-timeout=10000
+  license-working-dir=
+  load-cluster-configuration-from-dir=false
+  locator-wait-time=0
+  max-num-reconnect-tries=3
+  max-wait-time-reconnect=60000
+  mcast-address=239.192.81.1
+  mcast-flow-control=1048576, 0.25, 5000
+  mcast-recv-buffer-size=1048576
+  mcast-send-buffer-size=65535
+  mcast-ttl=32
+  member-timeout=5000
+  membership-port-range=1024-65535
+  memcached-bind-address=
+  memcached-port=0
+  memcached-protocol=ASCII
+  remote-locators=
+  remove-unresponsive-client=false
+  roles=
+  security-=
+  security-client-accessor=
+  security-client-accessor-pp=
+  security-client-auth-init=
+  security-client-authenticator=
+  security-client-dhalgo=
+  security-log-file=
+  security-log-level=config
+  security-peer-auth-init=
+  security-peer-authenticator=
+  security-peer-verifymember-timeout=1000
+  server-bind-address=
+  server-ssl-ciphers=any
+  server-ssl-enabled=false
+  server-ssl-keystore=
+  server-ssl-keystore-password=
+  server-ssl-keystore-type=
+  server-ssl-protocols=any
+  server-ssl-require-authentication=true
+  server-ssl-truststore=
+  server-ssl-truststore-password=
+  socket-buffer-size=32768
+  socket-lease-time=60000
+  ssl-ciphers=any
+  ssl-enabled=false
+  ssl-protocols=any
+  ssl-require-authentication=true
+  start-dev-rest-api=false
+  start-locator=
+  tcp-port=0
+  udp-fragment-size=60000
+  udp-recv-buffer-size=1048576
+  udp-send-buffer-size=65535
+  user-command-packages=
+  writable-working-dir=
+  
+
+[info 2015/07/22 11:39:58.999 PDT server8 <main> tid=0x1] Defaulting license-working-dir to current working directory "/Users/mross/Desktop/springsource/GemFire-Developer-8.0.a.RELEASE/server-bootstrap/scripts/server8".
+
+[info 2015/07/22 11:39:58.999 PDT server8 <main> tid=0x1] Licensing required 1 milliseconds.
+
+[info 2015/07/22 11:39:59.013 PDT server8 <main> tid=0x1] Serial Queue info : THROTTLE_PERCENT: 0.75 SERIAL_QUEUE_BYTE_LIMIT :41943040 SERIAL_QUEUE_THROTTLE :31457280 TOTAL_SERIAL_QUEUE_BYTE_LIMIT :83886080 TOTAL_SERIAL_QUEUE_THROTTLE :31457280 SERIAL_QUEUE_SIZE_LIMIT :20000 SERIAL_QUEUE_SIZE_THROTTLE :15000
+
+[info 2015/07/22 11:39:59.038 PDT server8 <main> tid=0x1] GemFire P2P Listener started on  tcp:///192.168.1.20:37775
+
+[info 2015/07/22 11:39:59.154 PDT server8 <PingSender> tid=0x35] locator 192.168.1.18(null)<v0>:41111 member address is 192.168.1.18(locator1:12097:locator)<ec><v3>:34372
+
+[info 2015/07/22 11:39:59.198 PDT server8 <PingSender> tid=0x35] locator 192.168.1.16(null)<v0>:41111 member address is 192.168.1.16(locator2:24638:locator)<ec><v0>:16389
+
+[info 2015/07/22 11:39:59.199 PDT server8 <PingSender> tid=0x35] Locator has disabled floating membership coordination
+
+[info 2015/07/22 11:39:59.200 PDT server8 <main> tid=0x1] Attempting to join distributed system whose membership coordinator is 192.168.1.16(locator2:24638:locator)<ec><v0>:16389 using membership ID 192.168.1.20(server8:37752):53151
+
+[info 2015/07/22 11:39:59.366 PDT server8 <UDP ucast receiver> tid=0x31] The negotiated cache time from 192.168.1.16(locator2:24638:locator)<ec><v0>:16389 is 2015/07/22 11:40:00.608 PDT.  Delta from the system clock is 1,243 milliseconds.
+
+[info 2015/07/22 11:39:59.370 PDT server8 <main> tid=0x1] Membership: lead member is now 192.168.1.16(server4:25250)<v4>:37898
+
+[info 2015/07/22 11:39:59.374 PDT server8 <FD_SOCK Ping thread> tid=0x38] GemFire failure detection is now monitoring 192.168.1.16(locator2:24638:locator)<ec><v0>:16389
+
+[info 2015/07/22 11:39:59.374 PDT server8 <main> tid=0x1] Connected to Jgroups channel (took  330  ms)
+
+[info 2015/07/22 11:39:59.375 PDT server8 <main> tid=0x1] Entered into membership with ID 192.168.1.20(server8:37752)<v7>:53151.
+
+[info 2015/07/22 11:39:59.375 PDT server8 <main> tid=0x1] Starting DistributionManager 192.168.1.20(server8:37752)<v7>:53151.  (took 352/ ms)
+
+[info 2015/07/22 11:39:59.376 PDT server8 <main> tid=0x1] Initial (membershipManager) view =  [192.168.1.16(locator2:24638:locator)<ec><v0>:16389, 192.168.1.18(locator1:12097:locator)<ec><v3>:34372, 192.168.1.16(server4:25250)<v4>:37898{lead}, 192.168.1.12(server5:31055)<v5>:59703, 192.168.1.20(server7:37739)<v6>:61670, 192.168.1.20(server8:37752)<v7>:53151]
+
+[info 2015/07/22 11:39:59.376 PDT server8 <main> tid=0x1] Admitting member <192.168.1.16(locator2:24638:locator)<ec><v0>:16389>. Now there are 1 non-admin member(s).
+
+[info 2015/07/22 11:39:59.376 PDT server8 <main> tid=0x1] Admitting member <192.168.1.18(locator1:12097:locator)<ec><v3>:34372>. Now there are 2 non-admin member(s).
+
+[info 2015/07/22 11:39:59.379 PDT server8 <main> tid=0x1] Admitting member <192.168.1.16(server4:25250)<v4>:37898>. Now there are 3 non-admin member(s).
+
+[info 2015/07/22 11:39:59.379 PDT server8 <main> tid=0x1] Admitting member <192.168.1.12(server5:31055)<v5>:59703>. Now there are 4 non-admin member(s).
+
+[info 2015/07/22 11:39:59.379 PDT server8 <main> tid=0x1] Admitting member <192.168.1.20(server7:37739)<v6>:61670>. Now there are 5 non-admin member(s).
+
+[info 2015/07/22 11:39:59.379 PDT server8 <main> tid=0x1] Admitting member <192.168.1.20(server8:37752)<v7>:53151>. Now there are 6 non-admin member(s).
+
+[info 2015/07/22 11:39:59.381 PDT server8 <main> tid=0x1] Membership: Finished view processing viewID =  7
+
+[info 2015/07/22 11:39:59.573 PDT server8 <P2P message reader for 192.168.1.20(server7:37739)<v6>:61670 shared unordered uid=9 port=51057> tid=0x45] Member 192.168.1.20(server7:37739)<v6>:61670 is equivalent or in the same redundancy zone.
+
+[info 2015/07/22 11:39:59.573 PDT server8 <main> tid=0x1] DistributionManager 192.168.1.20(server8:37752)<v7>:53151 started on john[41111],mallika[41111]. There were 5 other DMs. others: [192.168.1.16(server4:25250)<v4>:37898, 192.168.1.20(server7:37739)<v6>:61670, 192.168.1.12(server5:31055)<v5>:59703, 192.168.1.16(locator2:24638:locator)<ec><v0>:16389, 192.168.1.18(locator1:12097:locator)<ec><v3>:34372]  (VERBOSE, took 569 ms) 
+
+[info 2015/07/22 11:39:59.579 PDT server8 <P2P message reader for 192.168.1.16(locator2:24638:locator)<ec><v0>:16389 shared unordered uid=6 port=53441> tid=0x41] Member 192.168.1.16(locator2:24638:locator)<ec><v0>:16389 is equivalent or in the same redundancy zone.
+
+[info 2015/07/22 11:39:59.584 PDT server8 <P2P message reader for 192.168.1.12(server5:31055)<v5>:59703 shared unordered uid=8 port=58641> tid=0x47] Member 192.168.1.12(server5:31055)<v5>:59703 is equivalent or in the same redundancy zone.
+
+[info 2015/07/22 11:39:59.586 PDT server8 <P2P message reader for 192.168.1.18(locator1:12097:locator)<ec><v3>:34372 shared unordered uid=6 port=50828> tid=0x48] Member 192.168.1.18(locator1:12097:locator)<ec><v3>:34372 is equivalent or in the same redundancy zone.
+
+[info 2015/07/22 11:39:59.589 PDT server8 <P2P message reader for 192.168.1.16(server4:25250)<v4>:37898 shared unordered uid=8 port=53442> tid=0x49] Member 192.168.1.16(server4:25250)<v4>:37898 is equivalent or in the same redundancy zone.
+
+[info 2015/07/22 11:39:59.593 PDT server8 <Thread-21 StatSampler> tid=0x46] Archiving statistics to ""stats.gfs.gz"".
+
+[info 2015/07/22 11:39:59.704 PDT server8 <main> tid=0x1] Initializing region _monitoringRegion_192.168.1.20<v7>53151
+
+[info 2015/07/22 11:39:59.724 PDT server8 <main> tid=0x1] Region _monitoringRegion_192.168.1.20<v7>53151 requesting initial image from 192.168.1.16(locator2:24638:locator)<ec><v0>:16389
+
+[info 2015/07/22 11:39:59.740 PDT server8 <main> tid=0x1] _monitoringRegion_192.168.1.20<v7>53151 is done getting image from 192.168.1.16(locator2:24638:locator)<ec><v0>:16389. isDeltaGII is false
+
+[info 2015/07/22 11:39:59.741 PDT server8 <main> tid=0x1] Initialization of region _monitoringRegion_192.168.1.20<v7>53151 completed
+
+[info 2015/07/22 11:40:00.580 PDT server8 <main> tid=0x1] Received cluster configuration from the locator
+
+[info 2015/07/22 11:40:00.581 PDT server8 <main> tid=0x1] Received an empty shared configuration
+
+[info 2015/07/22 11:40:00.649 PDT server8 <main> tid=0x1] Initializing region PdxTypes
+
+[info 2015/07/22 11:40:00.788 PDT server8 <main> tid=0x1] Region PdxTypes requesting initial image from 192.168.1.12(server5:31055)<v5>:59703
+
+[info 2015/07/22 11:40:00.793 PDT server8 <main> tid=0x1] PdxTypes is done getting image from 192.168.1.12(server5:31055)<v5>:59703. isDeltaGII is false
+
+[info 2015/07/22 11:40:00.793 PDT server8 <main> tid=0x1] Initialization of region PdxTypes completed
+
+[info 2015/07/22 11:40:00.827 PDT server8 <main> tid=0x1] Created disk store persistentStore with unique id bc5782615ce4151-9145513e9b722842
+
+[info 2015/07/22 11:40:00.835 PDT server8 <main> tid=0x1] recovery region initialization took 1 ms
+
+[info 2015/07/22 11:40:00.859 PDT server8 <main> tid=0x1] Initializing region __PR
+
+[info 2015/07/22 11:40:00.884 PDT server8 <main> tid=0x1] Region __PR requesting initial image from 192.168.1.16(server4:25250)<v4>:37898
+
+[info 2015/07/22 11:40:00.903 PDT server8 <main> tid=0x1] __PR is done getting image from 192.168.1.16(server4:25250)<v4>:37898. isDeltaGII is false
+
+[info 2015/07/22 11:40:00.904 PDT server8 <main> tid=0x1] Initialization of region __PR completed
+
+[info 2015/07/22 11:40:00.936 PDT server8 <main> tid=0x1] Partitioned Region /Customer is created with prId=1
+
+[error 2015/07/22 11:40:01.087 PDT server8 <main> tid=0x1] Failed to create index PrimIndex on region /Customer with exception: com.gemstone.gemfire.cache.query.IndexNameConflictException: Index named ' PrimIndex ' already exists.
+
+[info 2015/07/22 11:40:01.290 PDT server8 <main> tid=0x1] Created oplog#1 drf for disk store persistentStore.
+
+[info 2015/07/22 11:40:02.668 PDT server8 <main> tid=0x1] Created oplog#1 crf for disk store persistentStore.
+
+[info 2015/07/22 11:40:02.670 PDT server8 <main> tid=0x1] Initializing region BookMaster
+
+[info 2015/07/22 11:40:02.836 PDT server8 <main> tid=0x1] Region BookMaster requesting initial image from 192.168.1.12(server5:31055)<v5>:59703
+
+[info 2015/07/22 11:40:02.846 PDT server8 <main> tid=0x1] BookMaster is done getting image from 192.168.1.12(server5:31055)<v5>:59703. isDeltaGII is false
+
+[info 2015/07/22 11:40:02.846 PDT server8 <main> tid=0x1] Region BookMaster initialized persistent id: /192.168.1.20:/Users/mross/Desktop/springsource/GemFire-Developer-8.0.a.RELEASE/server-bootstrap/scripts/server8/persistence/six created at timestamp 1437590402670 version 0 diskStoreId bc5782615ce4151-9145513e9b722842 name server8 with data from 192.168.1.12(server5:31055)<v5>:59703.
+
+[info 2015/07/22 11:40:02.847 PDT server8 <main> tid=0x1] Initialization of region BookMaster completed
+
+[info 2015/07/22 11:40:02.856 PDT server8 <main> tid=0x1] Initializing region BookOrder
+
+[info 2015/07/22 11:40:02.926 PDT server8 <main> tid=0x1] Region BookOrder requesting initial image from 192.168.1.12(server5:31055)<v5>:59703
+
+[info 2015/07/22 11:40:02.930 PDT server8 <main> tid=0x1] BookOrder is done getting image from 192.168.1.12(server5:31055)<v5>:59703. isDeltaGII is false
+
+[info 2015/07/22 11:40:02.930 PDT server8 <main> tid=0x1] Region BookOrder initialized persistent id: /192.168.1.20:/Users/mross/Desktop/springsource/GemFire-Developer-8.0.a.RELEASE/server-bootstrap/scripts/server8/persistence/six created at timestamp 1437590402856 version 0 diskStoreId bc5782615ce4151-9145513e9b722842 name server8 with data from 192.168.1.12(server5:31055)<v5>:59703.
+
+[info 2015/07/22 11:40:02.931 PDT server8 <main> tid=0x1] Initialization of region BookOrder completed
+
+[info 2015/07/22 11:40:02.952 PDT server8 <main> tid=0x1] Partitioned Region /InventoryItem is created with prId=2
+
+[info 2015/07/22 11:40:03.067 PDT server8 <main> tid=0x1] Bridge server connection listener bound to address 0.0.0.0/0.0.0.0:51072 with backlog 1,000.
+
+[info 2015/07/22 11:40:03.205 PDT server8 <UDP ucast receiver> tid=0x31] Membership: received new view  [192.168.1.16(locator2:24638:locator)<ec><v0>:16389|8] [192.168.1.16(locator2:24638:locator)<ec><v0>:16389/55836, 192.168.1.18(locator1:12097:locator)<ec><v3>:34372/31456, 192.168.1.16(server4:25250)<v4>:37898/16598, 192.168.1.12(server5:31055)<v5>:59703/34330, 192.168.1.20(server7:37739)<v6>:61670/23896, 192.168.1.20(server8:37752)<v7>:53151/37775, 192.168.1.12(server6:31061)<v8>:21268/56348]
+
+[info 2015/07/22 11:40:03.212 PDT server8 <View Message Processor> tid=0x68] Membership: Processing addition < 192.168.1.12(server6:31061)<v8>:21268 >
+
+[info 2015/07/22 11:40:03.213 PDT server8 <View Message Processor> tid=0x68] Admitting member <192.168.1.12(server6:31061)<v8>:21268>. Now there are 7 non-admin member(s).
+
+[info 2015/07/22 11:40:03.214 PDT server8 <View Message Processor> tid=0x68] Membership: Finished view processing viewID =  8
+
+[info 2015/07/22 11:40:03.228 PDT server8 <FD_SOCK Ping thread> tid=0x38] GemFire failure detection is now monitoring 192.168.1.12(server6:31061)<v8>:21268
+
+[warning 2015/07/22 11:40:03.235 PDT server8 <UDP ucast receiver> tid=0x31] New cache time offset calculated is off more than 109 ms from earlier offset.
+
+[info 2015/07/22 11:40:03.271 PDT server8 <Pooled High Priority Message Processor 1> tid=0x42] Member 192.168.1.12(server6:31061)<v8>:21268 is equivalent or in the same redundancy zone.
+
+[info 2015/07/22 11:40:03.457 PDT server8 <Timer-2> tid=0x4c] The negotiated cache time from local clock adjustment is 2015/07/22 11:40:04.591 PDT.  Delta from the system clock is 1,134 milliseconds.
+
+[info 2015/07/22 11:40:33.162 PDT server8 <main> tid=0x1] ClientHealthMonitorThread maximum allowed time between pings: 60,000
+
+[info 2015/07/22 11:40:33.246 PDT server8 <main> tid=0x1] CacheServer Configuration:   port=51072 max-connections=800 max-threads=0 notify-by-subscription=true socket-buffer-size=32768 maximum-time-between-pings=60000 maximum-message-count=230000 message-time-to-live=180 eviction-policy=none capacity=1 overflow directory=. groups=[] loadProbe=ConnectionCountProbe loadPollInterval=5000 tcpNoDelay=true
+
+[info 2015/07/22 11:40:33.253 PDT server8 <main> tid=0x1] Cache initialized using "file:/Users/mross/Desktop/springsource/GemFire-Developer-8.0.a.RELEASE/server-bootstrap/scripts/xml/server-cache.xml":
+  <?xml version="1.0"?>
+  <!DOCTYPE cache PUBLIC
+      "-//GemStone Systems, Inc.//GemFire Declarative Caching 7.0//EN"
+      "http://www.gemstone.com/dtd/cache7_0.dtd">
+  <!--
+    | cache.xml
+    |
+    | Initializes a region with sample Customer data for querying. 
+  -->
+  <cache>
+  		<disk-store name="persistentStore" compaction-threshold="50"
+  		auto-compact="true" allow-force-compaction="false"
+  		max-oplog-size="1024" queue-size="0" time-interval="100" 
+  		write-buffer-size="32768">
+  		<disk-dirs>
+  		  <disk-dir>persistence/six</disk-dir>
+  		  <disk-dir>persistence/seven</disk-dir>
+  		
+  		</disk-dirs>
+  		  
+  		
+  		</disk-store>
+  		
+  		
+  		
+  		
+  	 	<pdx read-serialized="true">
+  			<pdx-serializer>
+  				<class-name>com.gemstone.gemfire.pdx.ReflectionBasedAutoSerializer</class-name>
+  			</pdx-serializer>
+  		</pdx>
+        
+          <region name="Customer">
+      		<region-attributes refid="PARTITION"/>
+      		<index name="PrimIndex">
+      			<primary-key field="intValue"/>
+      		</index>
+      	</region>
+            
+          <region name="BookMaster">
+            <region-attributes refid="REPLICATE_PERSISTENT"
+             disk-store-name="persistentStore" 
+            disk-synchronous="false" />
+              
+      	</region>
+      	    	
+      	<region name="BookOrder">
+        		<region-attributes refid="REPLICATE_PERSISTENT"
+        		 disk-store-name="persistentStore" 
+        		disk-synchronous="false"/>
+      	</region>
+      	
+          <region name="InventoryItem">
+        		<region-attributes refid="PARTITION"/>
+      	</region>
+          <!-- <function-service>
+         	   <function>
+        		 <class-name>com.gopivotal.bookshop.buslogic.GenericSumFunction</class-name>
+        	 </function>
+         </function-service>     	
+           -->
+         <backup>/Users/mross/Desktop/springsource/GemFire-Developer-8.0.a.RELEASE/server-bootstrap/README.md</backup>  
+           
+          	
+  </cache>
+
+[info 2015/07/22 11:40:34.484 PDT server8 <UDP ucast receiver> tid=0x31] Membership: received new view  [192.168.1.16(locator2:24638:locator)<ec><v0>:16389|9] [192.168.1.16(locator2:24638:locator)<ec><v0>:16389/55836, 192.168.1.18(locator1:12097:locator)<ec><v3>:34372/31456, 192.168.1.16(server4:25250)<v4>:37898/16598, 192.168.1.12(server5:31055)<v5>:59703/34330, 192.168.1.20(server7:37739)<v6>:61670/23896, 192.168.1.20(server8:37752)<v7>:53151/37775, 192.168.1.12(server6:31061)<v8>:21268/56348, 192.168.1.16(server3:25409)<v9>:36575/7716]
+
+[info 2015/07/22 11:40:34.485 PDT server8 <View Message Processor> tid=0x68] Membership: Processing addition < 192.168.1.16(server3:25409)<v9>:36575 >
+
+[info 2015/07/22 11:40:34.485 PDT server8 <View Message Processor> tid=0x68] Admitting member <192.168.1.16(server3:25409)<v9>:36575>. Now there are 8 non-admin member(s).
+
+[info 2015/07/22 11:40:34.486 PDT server8 <View Message Processor> tid=0x68] Membership: Finished view processing viewID =  9
+
+[info 2015/07/22 11:40:34.499 PDT server8 <UDP ucast receiver> tid=0x31] The negotiated cache time from 192.168.1.16(locator2:24638:locator)<ec><v0>:16389 is 2015/07/22 11:40:35.713 PDT.  Delta from the system clock is 1,215 milliseconds.
+
+[info 2015/07/22 11:40:34.593 PDT server8 <Pooled High Priority Message Processor 1> tid=0x42] Member 192.168.1.16(server3:25409)<v9>:36575 is equivalent or in the same redundancy zone.
+
+[info 2015/07/22 11:42:14.580 PDT server8 <UDP ucast receiver> tid=0x31] The negotiated cache time from 192.168.1.16(locator2:24638:locator)<ec><v0>:16389 is 2015/07/22 11:42:15.815 PDT.  Delta from the system clock is 1,235 milliseconds.
+
+[info 2015/07/22 11:43:54.624 PDT server8 <Timer-2> tid=0x4c] The negotiated cache time from local clock adjustment is 2015/07/22 11:43:55.843 PDT.  Delta from the system clock is 1,219 milliseconds.
+
+[info 2015/07/22 11:44:39.537 PDT server8 <Pooled Waiting Message Processor 1> tid=0x77] Using Primary Key index implementation for 'PrimIndex' on region /__PR/_B__Customer_3
+
+[info 2015/07/22 11:44:39.537 PDT server8 <Pooled Waiting Message Processor 1> tid=0x77] Initializing region _B__Customer_3
+
+[info 2015/07/22 11:44:39.547 PDT server8 <Pooled Waiting Message Processor 1> tid=0x77] Initialization of region _B__Customer_3 completed
+
+[info 2015/07/22 11:44:40.977 PDT server8 <Pooled Waiting Message Processor 0> tid=0x39] Using Primary Key index implementation for 'PrimIndex' on region /__PR/_B__Customer_34
+
+[info 2015/07/22 11:44:40.977 PDT server8 <Pooled Waiting Message Processor 0> tid=0x39] Initializing region _B__Customer_34
+
+[info 2015/07/22 11:44:41.287 PDT server8 <Pooled Waiting Message Processor 0> tid=0x39] Initialization of region _B__Customer_34 completed
+
+[info 2015/07/22 11:44:43.033 PDT server8 <Pooled Waiting Message Processor 1> tid=0x77] Using Primary Key index implementation for 'PrimIndex' on region /__PR/_B__Customer_68
+
+[info 2015/07/22 11:44:43.033 PDT server8 <Pooled Waiting Message Processor 1> tid=0x77] Initializing region _B__Customer_68
+
+[info 2015/07/22 11:44:43.043 PDT server8 <Pooled Waiting Message Processor 1> tid=0x77] Initialization of region _B__Customer_68 completed
+
+[info 2015/07/22 11:44:44.427 PDT server8 <Pooled Waiting Message Processor 0> tid=0x39] Using Primary Key index implementation for 'PrimIndex' on region /__PR/_B__Customer_102
+
+[info 2015/07/22 11:44:44.428 PDT server8 <Pooled Waiting Message Processor 0> tid=0x39] Initializing region _B__Customer_102
+
+[info 2015/07/22 11:44:44.443 PDT server8 <Pooled Waiting Message Processor 0> tid=0x39] Initialization of region _B__Customer_102 completed
+
+[info 2015/07/22 11:44:52.574 PDT server8 <Pooled Message Processor 1> tid=0x4b] Created oplog#2 drf for disk store persistentStore.
+
+[info 2015/07/22 11:44:53.954 PDT server8 <Pooled Message Processor 1> tid=0x4b] Created oplog#2 crf for disk store persistentStore.
+
+[info 2015/07/22 11:44:53.959 PDT server8 <Idle OplogCompactor> tid=0x81] Created oplog#1 krf for disk store persistentStore.
+
+[info 2015/07/22 11:45:51.839 PDT server8 <Pooled Message Processor 1> tid=0x4b] Created oplog#3 drf for disk store persistentStore.
+
+[info 2015/07/22 11:45:54.568 PDT server8 <Pooled Message Processor 1> tid=0x4b] Created oplog#3 crf for disk store persistentStore.
+
+[info 2015/07/22 11:45:54.570 PDT server8 <Idle OplogCompactor> tid=0x83] Closing oplog#2 early since it is empty. It is for disk store persistentStore.
+
+[info 2015/07/22 11:45:54.857 PDT server8 <Oplog Delete Task> tid=0x84] Deleted oplog#2 crf for disk store persistentStore.
+
+[info 2015/07/22 11:45:54.857 PDT server8 <Oplog Delete Task> tid=0x84] Deleted oplog#2 drf for disk store persistentStore.
+
+[info 2015/07/22 11:47:09.988 PDT server8 <Pooled Message Processor 1> tid=0x4b] Created oplog#4 drf for disk store persistentStore.
+
+[info 2015/07/22 11:47:12.609 PDT server8 <Pooled Message Processor 1> tid=0x4b] Created oplog#4 crf for disk store persistentStore.
+
+[info 2015/07/22 11:47:12.610 PDT server8 <Idle OplogCompactor> tid=0x89] Closing oplog#3 early since it is empty. It is for disk store persistentStore.
+
+[info 2015/07/22 11:47:13.244 PDT server8 <Oplog Delete Task> tid=0x8a] Deleted oplog#3 crf for disk store persistentStore.
+
+[info 2015/07/22 11:47:13.245 PDT server8 <Oplog Delete Task> tid=0x8a] Deleted oplog#3 drf for disk store persistentStore.
+
+[info 2015/07/22 11:47:14.614 PDT server8 <UDP ucast receiver> tid=0x31] The negotiated cache time from 192.168.1.16(locator2:24638:locator)<ec><v0>:16389 is 2015/07/22 11:47:15.836 PDT.  Delta from the system clock is 1,222 milliseconds.
+
+[info 2015/07/22 11:48:40.824 PDT server8 <UDP ucast receiver> tid=0x31] Membership: received new view  [192.168.1.16(locator2:24638:locator)<ec><v0>:16389|10] [192.168.1.16(locator2:24638:locator)<ec><v0>:16389/55836, 192.168.1.16(server4:25250)<v4>:37898/16598, 192.168.1.12(server5:31055)<v5>:59703/34330, 192.168.1.20(server7:37739)<v6>:61670/23896, 192.168.1.20(server8:37752)<v7>:53151/37775, 192.168.1.12(server6:31061)<v8>:21268/56348, 192.168.1.16(server3:25409)<v9>:36575/7716] crashed mbrs: [192.168.1.18(locator1:12097:locator)<ec><v3>:34372/31456]
+
+[info 2015/07/22 11:48:40.825 PDT server8 <View Message Processor> tid=0x68] Membership: Processing departing member ( 192.168.1.18(locator1:12097:locator)<ec><v3>:34372 )
+
+[info 2015/07/22 11:48:40.826 PDT server8 <View Message Processor> tid=0x68] Member at 192.168.1.18(locator1:12097:locator)<ec><v3>:34372 unexpectedly left the distributed cache: departed JGroups view
+
+[info 2015/07/22 11:48:40.827 PDT server8 <View Message Processor> tid=0x68] Membership: Finished view processing viewID =  10
+
+[info 2015/07/22 11:48:40.833 PDT server8 <UDP ucast receiver> tid=0x31] The negotiated cache time from 192.168.1.16(locator2:24638:locator)<ec><v0>:16389 is 2015/07/22 11:48:42.108 PDT.  Delta from the system clock is 1,275 milliseconds.
+
+[info 2015/07/22 11:48:52.757 PDT server8 <Pooled Message Processor 1> tid=0x4b] Created oplog#5 drf for disk store persistentStore.
+
+[info 2015/07/22 11:48:55.302 PDT server8 <Pooled Message Processor 1> tid=0x4b] Created oplog#5 crf for disk store persistentStore.
+
+[info 2015/07/22 11:48:55.303 PDT server8 <Idle OplogCompactor> tid=0x91] Closing oplog#4 early since it is empty. It is for disk store persistentStore.
+
+[info 2015/07/22 11:48:55.454 PDT server8 <Oplog Delete Task> tid=0x92] Deleted oplog#4 crf for disk store persistentStore.
+
+[info 2015/07/22 11:48:55.455 PDT server8 <Oplog Delete Task> tid=0x92] Deleted oplog#4 drf for disk store persistentStore.
+
+[info 2015/07/22 11:50:13.888 PDT server8 <Function Execution Processor1> tid=0x63] Received GFSH shutdown. Shutting down member 192.168.1.20(server8:37752)<v7>:53151
+
+[info 2015/07/22 11:50:13.926 PDT server8 <Function Execution Processor1> tid=0x63] GemFireCache[id = 1508038883; isClosing = true; isShutDownAll = false; closingGatewayHubsByShutdownAll = false; created = Wed Jul 22 11:39:59 PDT 2015; server = true; copyOnRead = false; lockLease = 120; lockTimeout = 60]: Now closing.
+
+[info 2015/07/22 11:50:13.927 PDT server8 <Function Execution Processor1> tid=0x63] Resetting original MemoryPoolMXBean heap threshold bytes 0 on pool CMS Old Gen
+
+[info 2015/07/22 11:50:13.967 PDT server8 <Function Execution Processor1> tid=0x63] Bridge server on port 51,072 is shutting down.
+
+[info 2015/07/22 11:50:13.970 PDT server8 <Distributed system shutdown hook> tid=0xf] VM is exiting - shutting down distributed system
+
+[info 2015/07/22 11:50:14.114 PDT server8 <Pooled High Priority Message Processor 1> tid=0x42] Member at 192.168.1.16(server3:25409)<v9>:36575 gracefully left the distributed cache: shutdown message received
+
+[info 2015/07/22 11:50:14.129 PDT server8 <Pooled High Priority Message Processor 1> tid=0x42] Member at 192.168.1.20(server7:37739)<v6>:61670 gracefully left the distributed cache: shutdown message received
+
+[info 2015/07/22 11:50:14.137 PDT server8 <Pooled High Priority Message Processor 1> tid=0x42] Member at 192.168.1.12(server6:31061)<v8>:21268 gracefully left the distributed cache: shutdown message received
+
+[info 2015/07/22 11:50:14.148 PDT server8 <Pooled High Priority Message Processor 1> tid=0x42] Member at 192.168.1.12(server5:31055)<v5>:59703 gracefully left the distributed cache: shutdown message received
+
+[info 2015/07/22 11:50:14.151 PDT server8 <Pooled High Priority Message Processor 1> tid=0x42] Member at 192.168.1.16(server4:25250)<v4>:37898 gracefully left the distributed cache: shutdown message received
+
+[info 2015/07/22 11:50:14.172 PDT server8 <Function Execution Processor1> tid=0x63] Shutting down DistributionManager 192.168.1.20(server8:37752)<v7>:53151. 
+
+[info 2015/07/22 11:50:15.280 PDT server8 <Function Execution Processor1> tid=0x63] Now closing distribution for 192.168.1.20(server8:37752)<v7>:53151
+
+[info 2015/07/22 11:50:15.295 PDT server8 <Function Execution Processor1> tid=0x63] DistributionManager stopped in 1,123ms.
+
+[info 2015/07/22 11:50:15.295 PDT server8 <Function Execution Processor1> tid=0x63] Marking DistributionManager 192.168.1.20(server8:37752)<v7>:53151 as closed.

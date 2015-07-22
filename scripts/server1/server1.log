@@ -1,0 +1,10 @@
+
+[severe 2015/07/14 14:21:58.414 EDT server1 <Quorum Lost Notification> tid=0x45] Possible loss of quorum due to the loss of 2 cache processes: [172.16.139.149(VMServer1:3674)<v19>:56704, 172.16.139.149(VMServer1:3183)<v8>:34984]
+
+[warning 2015/07/14 17:27:15.558 EDT server1 <ClientHealthMonitor Thread> tid=0x7f] Monitoring client with member id identity(pivotal-guest-6-59(22757:loner):51937:e6f0c78d(version:GFE 8.0),connection=1. It had been 354,323 ms since the latest heartbeat. Max interval is 60,000. Terminated client.
+
+[warning 2015/07/14 17:27:15.577 EDT server1 <ClientHealthMonitor Thread> tid=0x7f] Monitoring client with member id identity(pivotal-guest-6-59(22757:loner):52297:f04cd58d(version:GFE 8.0),connection=1. It had been 349,264 ms since the latest heartbeat. Max interval is 60,000. Terminated client.
+
+[warning 2015/07/14 21:11:33.638 EDT server1 <ClientHealthMonitor Thread> tid=0x7f] Monitoring client with member id identity(pivotal-guest-6-59(22757:loner):58597:d251778e(version:GFE 8.0),connection=1. It had been 10,801,487 ms since the latest heartbeat. Max interval is 60,000. Terminated client.
+
+[warning 2015/07/14 21:11:33.641 EDT server1 <ClientHealthMonitor Thread> tid=0x7f] Monitoring client with member id identity(pivotal-guest-6-59(22757:loner):58604:1859778e(version:GFE 8.0),connection=1. It had been 10,809,504 ms since the latest heartbeat. Max interval is 60,000. Terminated client.

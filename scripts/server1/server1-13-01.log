@@ -1,0 +1,2 @@
+
+[warning 2015/07/10 09:35:26.123 PDT server1 <ServerConnection on port 63548 Thread 0> tid=0x54] Server connection from [identity(192.168.1.64(ClientWorker:15148:loner):63613:9d4fd278:ClientWorker(version:GFE 8.0),connection=2; port=63616]: The function is not registered for function id SummingResultCollector
