@@ -1,2 +1,0 @@
-
-[error 2015/07/08 14:34:52.376 PDT server2 <main> tid=0x1] Failed to create index PrimIndex on region /Customer with exception: com.gemstone.gemfire.cache.query.IndexNameConflictException: Index named ' PrimIndex ' already exists.
